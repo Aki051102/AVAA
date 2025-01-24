@@ -1,0 +1,14 @@
+streamlit
+plotly.express
+pandas 
+os
+warnings
+matplotlib
+seaborn
+plotly
+altair
+xlsxwriter
+numpy
+xlrd
+openpyxl
+pyxlsb
