@@ -1,7 +1,6 @@
 streamlit
 plotly.express
 pandas 
-warnings
 matplotlib
 seaborn
 plotly
