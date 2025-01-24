@@ -1,7 +1,6 @@
 import streamlit as st
 import plotly.express as px
 import pandas as pd
-import os
 import warnings
 
 # Suppress warnings
@@ -41,8 +40,8 @@ if fl is not None:
         st.error(f"Error reading file: {e}")
         st.stop()
 else:
-    os.chdir(r"C:\Users\Akash\Desktop\AVAA")  # Default directory for fallback file
-    default_file = "Superstore.xls"
+    # Use relative path to load the default file
+    default_file = "/Superstore.xls"  # Ensure the file is in a 'data' folder in the repo
     try:
         if default_file.endswith(".xls"):
             df = pd.read_excel(default_file, engine="xlrd")
